@@ -52,6 +52,9 @@ def serialize_animal(animal):
     if "type" in characteristics:
         output += f"<li><strong>Type:</strong> {characteristics['type']}</li>"
 
+    if "skin_type" in characteristics:
+        output += f"<li><strong>Skin Type:</strong> {characteristics['skin_type']}</li>"
+
     output += "</ul>"
     output += "</div>"
     output += "</li>"
